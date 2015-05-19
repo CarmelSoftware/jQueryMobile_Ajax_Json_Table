@@ -14,7 +14,11 @@ This jQuery Mobile code is the companion for the following Tutorial:
  
  <img alt="load Json        " border="0" height="640" src="http://3.bp.blogspot.com/-9OtuaKdCLFA/VVnNhROdJ3I/AAAAAAAAKzY/g5ryXMABSzc/s640/3.png" width="418" />
  
+ 
+ 
  <img alt="to load Json        " border="0" height="640" src="http://4.bp.blogspot.com/-N47xdv8lcdg/VVnNh5bcZ7I/AAAAAAAAKzg/8jNQVtVjoQY/s640/4.png" width="362" />
+ 
+ 
  
  <img alt="  Ajax  to load Json        " border="0" height="640" src="http://4.bp.blogspot.com/-6gPQ-O_jgBU/VVnNiHfu52I/AAAAAAAAKzk/TaqtsPuJRs0/s640/5.png" width="362" />
  
