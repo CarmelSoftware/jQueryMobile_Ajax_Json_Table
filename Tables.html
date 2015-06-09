@@ -13,7 +13,7 @@
 <body>
     <div data-role="page" data-theme="a" id="page1">
 
-        <div data-role="header" data-position="fixed">
+       <div data-role="header" data-position="fixed">
             <h1>jQueryMobile</h1>
 
             <a href="#" class="ui-btn ui-icon-grid ui-btn-icon-left  ui-shadow  ui-corner-all">Options</a>
@@ -24,4 +24,29 @@
                     <li><a href="#" data-icon="search" class="ui-shadow  ui-corner-all">Search</a></li>
                 </ul>
             </div>
+        </div>
+
+        <div data-role="main" class="ui-content">
+            <h1>jQuery Mobile Tables</h1>
+            <p><b>This is a small App to exemplify Using Tables on jQueryMobile</b></p>
+            <p><b>This Toggle Table is dynamically loaded using Ajax and Json data</b></p><br />            
+
+            
+            <table id="tblCustomers" data-role="table" data-mode="columntoggle" class="ui-responsive ui-shadow">
+                <thead>
+                    <tr>
+                        <th>CustomerID</th>                        
+                        <th data-priority="1">First Name</th>
+                        <th data-priority="2">Last Name</th>
+                        <th data-priority="3">City</th>
+                        <th data-priority="4">Postal Code</th>
+                        <th data-priority="5">Country</th>
+                    </tr>
+                </thead>
+                 <tbody></tbody>
+            </table>
+            <br />
+            <br />
+            <a id="btnLoadTable" href="#" data-role="button" data-icon="grid" class="ui-shadow  ui-corner-all">Load Json Data</a>
+
         </div>
