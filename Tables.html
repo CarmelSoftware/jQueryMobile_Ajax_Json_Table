@@ -66,3 +66,36 @@
         </div>
 
     </div>
+<script>
+        $(function () {  
+
+            var fnLoadData = function(){
+                
+                $.ajax({
+                    url: "data/Customers.txt",
+                    dataType: "json",
+                    method: "GET",                
+                    success: function (data) {
+                        var tbl = $("#tblCustomers tbody");
+                     
+                        $.each(data, function (id, customer) {                         
+                        
+                            tbl.append("<tr><td>" + customer.id + "</td><td>"
+                                + customer.firstName + "</td><td>" + customer.lastName
+                                + "</td><td>" + customer.city + "</td><td>" + customer.code
+                                + "</td><td>" + customer.country + "</td></tr>")
+                                .parents("table")
+                                .table("refresh");                                
+ 
+                        });                    
+                    
+                    },
+                    error: function (msg) { console.log(msg);  }
+                });
+
+            }
+
+            $("#btnLoadTable").on("click", fnLoadData);
+        })
+
+    </script>
